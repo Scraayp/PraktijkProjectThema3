@@ -5,7 +5,7 @@
       <paths name="server1">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/PraktijkProjectThema3" />
           </mappings>
         </serverdata>
       </paths>
