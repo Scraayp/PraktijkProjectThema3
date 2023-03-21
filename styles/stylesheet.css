@@ -4,3 +4,53 @@
 
     Omschrijving: De algemene stylesheet voor de website
 */
+body
+{
+    margin: 0;
+}
+@font-face
+{
+    src: url("../../PraktijkProjectThema3/fonts/Montseratt.ttf");
+    font-family: "montseratt";
+}
+#navbar-right
+{
+    display: flex;
+    align-items: center;
+}
+#navbar-right ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+#navbar-right li
+{
+    display: block;
+    text-align: center;
+}
+#navbar-right a
+{
+    padding: 2vh;
+    text-decoration: none;
+    color: #222226;
+    font-family: "montseratt";
+}
+#navbar-right a:hover
+{
+    color: #bea189;
+    text-decoration: underline;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    height: 15vh;
+    background-color: #fff;
+}
+nav img
+{
+    height: 12vh;
+}
