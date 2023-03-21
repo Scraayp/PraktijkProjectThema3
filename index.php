@@ -22,6 +22,9 @@
         <script src="scripts/script.js" defer></script>
     </head>
     <body>
+    <?php
+    include("includes/header.php");
+    ?>
         
     </body>
 </html>

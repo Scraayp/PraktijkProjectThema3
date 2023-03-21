@@ -10,7 +10,7 @@ body
 }
 @font-face
 {
-    src: url("../../PraktijkProjectThema3/fonts/Montseratt.ttf");
+    src: url("../fonts/Montseratt.ttf");
     font-family: "montseratt";
 }
 #navbar-right
