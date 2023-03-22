@@ -1,0 +1,73 @@
+/*
+    Auteur: Dani de Rooij
+    Aanmaakdatum: 22/03/2023 13:40
+
+    Omschrijving: Hoofdpagina
+*/
+*
+{
+    font-family: montseratt;
+}
+#mainBanner {
+    display: flex;
+    height: 60vh;
+    background: url("../images/homepage_banner1.jpeg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left;
+    align-items: center;
+}
+
+#textContainer
+{
+    margin-left: 10vw;
+    width: 30vw;
+    color: #6C6D74;
+}
+p
+{
+    font-size: 15px;
+}
+h2
+{
+    font-size: 20px;
+}
+h1
+{
+    font-size: 36px;
+}
+h2, h1
+{
+    color: #222226;
+}
+#articles
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.article
+{
+    width: 25vw;
+    margin-left: 5vw;
+    text-align: center;
+}
+#grijs
+{
+    background-color: #F2F2F2;
+    height: 10vh;
+}
+.button
+{
+    background-color: #b7a088;
+    color: #fff;
+    text-decoration: none;
+    padding: 2vh 2vw;
+    border-radius: 30px;
+}
+#buttons
+{
+    margin-top: 4vh;
+}

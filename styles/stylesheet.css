@@ -47,10 +47,10 @@ nav
 {
     display: flex;
     justify-content: space-around;
-    height: 15vh;
+    height: 10vh;
     background-color: #fff;
 }
 nav img
 {
-    height: 12vh;
+    height: 10vh;
 }
