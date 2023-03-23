@@ -6,6 +6,8 @@
  * 
  * Omschrijving: De hoofdpagina van de website
  */
+
+//  ron wuz here
 ?>
 
 <!DOCTYPE html>
