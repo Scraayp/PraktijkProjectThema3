@@ -4,10 +4,7 @@
 
     Omschrijving: Hoofdpagina
 */
-*
-{
-    font-family: montseratt;
-}
+
 #mainBanner {
     display: flex;
     height: 60vh;
@@ -70,4 +67,9 @@ h2, h1
 #buttons
 {
     margin-top: 4vh;
+}
+
+.button:hover
+{
+    background-color: #b7a088;
 }

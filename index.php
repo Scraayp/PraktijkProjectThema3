@@ -48,7 +48,7 @@
                     </p>
                     <div id="buttons">
                         <a href="" class="button">Neem contact op</a>
-                        <a href="pages/" class="button">doe de zelftest!</a>
+                        <a href="pages/" class="button">Doe de zelftest!</a>
                     </div>
                 </div>
             </div>
