@@ -5,112 +5,153 @@
     Omschrijving: De algemene stylesheet voor de website
 */
 
-body
-{
-    margin: 0;
+body {
+	margin: 0;
 }
-@font-face
-{
-    src: url("../fonts/Montseratt.ttf");
-    font-family: "montseratt";
+@font-face {
+	src: url("../fonts/Montseratt.ttf");
+	font-family: "montseratt";
 }
-*
-{
-    font-family: montseratt;
+* {
+	font-family: montseratt;
 }
 
-#navbar-right
-{
-    display: flex;
-    align-items: center;
+#navbar-right {
+	display: flex;
+	align-items: center;
 }
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
 }
-#navbar-right li
-{
-    display: block;
-    text-align: center;
+#navbar-right li {
+	display: block;
+	text-align: center;
 }
-#navbar-right a
-{
-    padding: 1.5vh 1.5vw;
-    text-decoration: none;
-    color: #222226;
+#navbar-right a {
+	padding: 1.5vh 1.5vw;
+	text-decoration: none;
+	color: #222226;
 }
-#navbar-right a:hover
-{
-    color: #bea189;
-    text-decoration: underline;
+#navbar-right a:hover {
+	color: #bea189;
+	text-decoration: underline;
 }
-#dropdown
-{
-    display: none;
-    left: 0;
-    position: absolute;
+
+/* Footer styling */
+footer {
+	background-color: #004e78;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 35%;
+	font-family: montseratt;
 }
-#dropdown img
-{
-    height: 6vh;
+
+#divider {
+	height: 230px;
+	border: 1px solid #e5e5e7;
+	border-color: rgba(255, 255, 255, 0.1);
+	margin-top: 3%;
+	display: inline-block;
 }
-#dropdownContent
-{
-    display: none;
-    background-color: white;
-    width: 50vw;
+
+#leftFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	text-align: left;
 }
-#dropdownContent a
-{
-    text-decoration: none;
-    font-size: 15px;
-    color: #222226;
+
+#leftFooter hr {
+	border: 1px solid #e5e5e7;
+	border-color: rgba(255, 255, 255, 0.1);
+	width: 50%;
 }
-#dropdown:hover #dropdownContent
-{
-    display: block;
+
+#rightFooter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	width: 50%;
+	padding-left: 3%;
 }
-nav
-{
-    display: flex;
-    justify-content: space-around;
-    height: 10vh;
-    background-color: #fff;
+
+#rightFooter h3 {
+	font-size: 18px;
+	font-family: "montseratt";
+	font-weight: inherit;
 }
-#navbar-left
-{
-    display: flex;
-    flex-direction: row;
+
+#rightFooter a {
+	font-size: 14px;
+	font-family: "montseratt";
 }
-nav img
-{
-    height: 10vh;
-    align-items: center;
+
+@media screen and (max-width: 960px) {
+	footer {
+		flex-direction: column;
+	}
+}
+
+#dropdown {
+	display: none;
+	left: 0;
+	position: absolute;
+}
+#dropdown img {
+	height: 6vh;
+}
+#dropdownContent {
+	display: none;
+	background-color: white;
+	width: 50vw;
+}
+#dropdownContent a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #222226;
+}
+#dropdown:hover #dropdownContent {
+	display: block;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+	height: 10vh;
+	background-color: #fff;
+}
+#navbar-left {
+	display: flex;
+	flex-direction: row;
+}
+nav img {
+	height: 10vh;
+	align-items: center;
 }
 /*scherm kleiner dan 1335px kleiner lettertype en padding*/
 @media screen and (max-width: 1335px) {
-    #navbar-right a
-    {
-        padding: 0.5vh 0.5vw;
-        font-size: 14px;
-    }
+	#navbar-right a {
+		padding: 0.5vh 0.5vw;
+		font-size: 14px;
+	}
 }
 /* kleiner dan 1050px dropdown aanmaken*/
 @media screen and (max-width: 1050px) {
-    #navbar-right
-    {
-        display: none;
-    }
-    #dropdown
-    {
-        display: block;
-    }
-    #logo
-    {
-        right: 0;
-        position: absolute;
-    }
+	#navbar-right {
+		display: none;
+	}
+	#dropdown {
+		display: block;
+	}
+	#logo {
+		right: 0;
+		position: absolute;
+	}
 }

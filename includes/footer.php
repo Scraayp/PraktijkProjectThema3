@@ -1,13 +1,16 @@
 <footer>
-    <section>
-        <img src="/images/foto-footer.png" width="75" height="92">
+    <div id="leftFooter">
+        <img src="../images/foto-footer.png" width="75" height="92">
         <hr>
         <p class="textGray">Info@psycholoognederland.org<br>Telefoon: 085 0645864</p>
         <hr>
-        <p>Locaties & Psychologen -></p>
-    </section>
-
-    <section>
-
-    </section>
+        <a>Locaties & Psychologen -></a>
+    </div>
+    <div id="divider"></div>
+    <div id="rightFooter">
+        <h3>Algemene informatie</h3>
+        <a>Meer weten -></a>
+        <a>Vergoeding -></a>
+        <a>Contact -></p>
+    </div>
 </footer>
