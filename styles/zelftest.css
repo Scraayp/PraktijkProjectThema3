@@ -1,0 +1,13 @@
+/*
+    Auteur: Jesse Copier
+    Aanmaakdatum: 22/03/2023 14:45
+
+    Omschrijving: Stylesheet voor de pagina met de zelftest
+*/
+
+#zelftestBanner
+{
+    display: flex;
+    height: 60vh;
+
+}

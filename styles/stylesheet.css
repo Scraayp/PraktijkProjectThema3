@@ -13,6 +13,10 @@ body
     src: url("../fonts/Montseratt.ttf");
     font-family: "montseratt";
 }
+*
+{
+    font-family: montseratt;
+}
 #navbar-right
 {
     display: flex;
@@ -35,7 +39,6 @@ body
     padding: 2vh;
     text-decoration: none;
     color: #222226;
-    font-family: "montseratt";
 }
 #navbar-right a:hover
 {
