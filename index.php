@@ -88,7 +88,6 @@
             <!--                Grijze vlak                     -->
             <div id="grijs">
             </div>
-<!--                            TextVlak                        -->
         </main>
 
     </body>

@@ -14,6 +14,7 @@
     background-size: cover;
     justify-content: left;
     align-items: center;
+    min-height: 400px;
 }
 
 #textContainer
@@ -72,4 +73,37 @@ h2, h1
 .button:hover
 {
     background-color: #b7a088;
+}
+
+@media screen and (max-width: 1335px) {
+    #textContainer, #textContainer h1, #textContainer h2
+    {
+        width: 60vw;
+        color: white;
+    }
+
+    #articles
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #buttons
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #textContainer h1
+    {
+        font-size: 20px;
+    }
+}
+@media screen and (max-height: 550px) {
+    #textContainer h1
+    {
+        font-size: 20px;
+    }
+
 }
