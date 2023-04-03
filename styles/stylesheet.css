@@ -97,6 +97,24 @@ footer {
 @media screen and (max-width: 960px) {
 	footer {
 		flex-direction: column;
+		height: 50%;
+	}
+	#leftFooter hr {
+		width: 70%;
+	}
+	#leftfooter {
+		width: 100%;
+	}
+	#divider {
+		height: 0%;
+	}
+
+	#leftFooter img {
+		margin-top: 3%;
+	}
+	#rightFooter {
+		width: 100%;
+		text-align: center;
 	}
 }
 
@@ -148,7 +166,7 @@ nav img {
 		display: none;
 	}
 	#dropdown {
-		display: block;
+		display: bwlock;
 	}
 	#logo {
 		right: 0;
