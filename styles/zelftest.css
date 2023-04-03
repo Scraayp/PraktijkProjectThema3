@@ -55,13 +55,11 @@ main
 .questionContainer
 {
     width: 60vw;
-    min-height: 25vh;
     background-color: white;
     margin: 0;
-    padding-top: 25px;
+    padding: 50px 20px 50px 20px;
     margin-bottom: 25px;
     border-radius: 25px;
-    padding-left: 10px;
 }
 h3
 {
@@ -69,4 +67,19 @@ h3
     font-size: 24px;
     margin: 0;
     margin-bottom: 20px;
+}
+input[type="submit"]
+{
+    width: 120px;
+    height: 50px;
+    margin-bottom: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #bea189;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover
+{
+    background-color: #ead0b0;
 }
