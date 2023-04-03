@@ -46,8 +46,42 @@
         <form>
             <div class="questionContainer">
                 <h3>
-                    Question
+                    Hoe beschrijf je jezelf op feestjes?
                 </h3>
+                <input type="radio" name="q1" value="dominant">
+                <label>Ik ben degene die opvalt en de show steelt.</label><br>
+                <input type="radio" name="q1" value="invloedrijk">
+                <label>Ik ben de praatgrage, gezellige persoon die overal met iedereen kan praten.</label><br>
+                <input type="radio" name="q1" value="stabiel">
+                <label>Ik hou ervan om met een paar goede vrienden te zijn en heb geen behoefte aan grote groepen mensen.</label><br>
+                <input type="radio" name="q1" value="consciëntieus">
+                <label>Ik ben degene die de verantwoordelijkheid neemt om ervoor te zorgen dat iedereen het naar zijn zin heeft.</label>
+            </div>
+            <div class="questionContainer">
+                <h3>
+                    Wat motiveert jou het meest?
+                </h3>
+                <input type="radio" name="q2" value="dominant">
+                <label></label><br>
+                <input type="radio" name="q2" value="invloedrijk">
+                <label></label><br>
+                <input type="radio" name="q2" value="stabiel">
+                <label></label><br>
+                <input type="radio" name="q2" value="consciëntieus">
+                <label></label>
+            </div>
+            <div class="questionContainer">
+                <h3>
+                    Wat motiveert jou het meest?
+                </h3>
+                <input type="radio" name="q3" value="dominant">
+                <label>Answer 1</label><br>
+                <input type="radio" name="q3" value="invloedrijk">
+                <label>Answer 2</label><br>
+                <input type="radio" name="q3" value="stabiel">
+                <label>Answer 3</label><br>
+                <input type="radio" name="q3" value="consciëntieus">
+                <label>Answer 4</label>
             </div>
         </form>
     </main>
