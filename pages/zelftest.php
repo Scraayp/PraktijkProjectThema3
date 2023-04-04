@@ -43,7 +43,7 @@
         </article>
     </div>
     <main>
-        <form>
+        <form method="post" action="results.php">
             <div class="questionContainer">
                 <h3>
                     Hoe beschrijf je jezelf op feestjes?
