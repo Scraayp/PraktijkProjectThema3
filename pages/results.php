@@ -14,7 +14,7 @@
 <html lang="nl">
 <head>
     <title>
-        index.php
+        Psycholoog Nederland - Resultaten
     </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,14 +72,23 @@ include("../includes/header.php");
 
     if(count($highestArray) > 1)
     {
+        echo "Je bent een ";
         foreach ($highestArray as $key => $value)
         {
-            echo $highestArray[$key];
+            if (count($highestArray) - 1 == $key)
+            {
+                echo $highestArray[$key];
+            }
+            else
+            {
+                echo $highestArray[$key] . ", ";
+            }
         }
+        echo " persoon.";
     }
     else
     {
-        echo "Je bent een " . $highestArray[0] . "persoon";
+        echo "Je bent een " . $highestArray[0] . " persoon.";
     }
 ?>
 <main>

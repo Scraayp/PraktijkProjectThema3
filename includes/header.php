@@ -6,7 +6,7 @@
         <nav>
             <div id="navbar-left">
                 <div id="dropdown">
-                    <a id="dropdownButton"><img src="/Praktijk/Project/PraktijkProjectThema3/images/dropdown.png"></a>
+                    <img src="/Praktijk/Project/PraktijkProjectThema3/images/dropdown.png">
                     <ul id="dropdownContent">
                         <li><a href="/Praktijk/Project/PraktijkProjectThema3/index.php">Home</a></li>
                         <li><a href="">Psychologen en locaties</a></li>

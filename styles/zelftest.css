@@ -16,7 +16,7 @@ body
     height: 60vh;
     width: 100vw;
     background-image: url("../images/zelftest-achtergrond.jpeg");
-    background-position: 50% 50%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: left;
@@ -82,4 +82,16 @@ input[type="submit"]
 input[type="submit"]:hover
 {
     background-color: #ead0b0;
+}
+
+@media screen and (max-width: 1335px)
+{
+    #zelftestBanner article
+    {
+        width: 80vw;
+    }
+    .headerP
+    {
+        color: black;
+    }
 }
