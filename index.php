@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="styles/stylesheet.css">
         <link rel="stylesheet" href="styles/index.css">
         <!-- Koppeling JavaScript -->
-        <script src="scripts/script.js" defer></script>
     </head>
     <body>
 <!--    Include de navigatie balk-->
@@ -32,6 +31,7 @@
         <main>
 <!--            Banner met het plaatje ering die bovenaan de pagina staat           -->
             <div id="mainBanner">
+<!--                          Text binnen de banner                                 -->
                 <div id="textContainer">
                     <h1>
                         Psycholoog Nederland
@@ -46,13 +46,14 @@
                         Wij behandelen volwassenen met o.a. angsten, depressie en somatoforme klachten.
                         </strong>
                     </p>
+<!--                    Div voor styling knopjes                                    -->
                     <div id="buttons">
                         <a href="" class="button">Neem contact op</a>
                         <a href="pages/zelftest.php" class="button">Doe de zelftest!</a>
                     </div>
                 </div>
             </div>
-<!--            Banner met de 3 blokjes text            -->
+            <!--            Banner met de 3 blokjes text                            -->
             <div id="articles">
                 <div class="article">
                     <h2>
@@ -85,10 +86,10 @@
                     </p>
                 </div>
             </div>
-            <!--                Grijze vlak                     -->
-            <div id="grijs">
-            </div>
         </main>
-
+            <!--            Footer includen                                 -->
+            <?php
+            include("includes/footer.php");
+            ?>
     </body>
 </html>

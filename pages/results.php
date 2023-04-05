@@ -129,6 +129,11 @@ include("../includes/header.php");
 
 }
 ?>
+
 </main>
+                <!--            Footer includen                                 -->
+                <?php
+                include("../includes/footer.php");
+                ?>
 </body>
 </html>

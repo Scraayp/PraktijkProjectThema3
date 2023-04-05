@@ -1,8 +1,6 @@
-<link
-
 <footer>
     <div id="leftFooter">
-        <img src="../images/foto-footer.png" width="75" height="92">
+        <img src="/Praktijk/Project/PraktijkProjectThema3/images/foto-footer.png" width="75" height="92">
         <hr>
         <p class="textGray">Info@psycholoognederland.org<br>Telefoon: 085 0645864</p>
         <hr>
@@ -13,6 +11,6 @@
         <h3>Algemene informatie</h3>
         <a>Meer weten -></a>
         <a>Vergoeding -></a>
-        <a>Contact -></p>
+        <a>Contact -></a>
     </div>
 </footer>
