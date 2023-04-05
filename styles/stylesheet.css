@@ -8,6 +8,7 @@
 body {
 	margin: 0;
 }
+/*font toevoegen*/
 @font-face {
 	src: url("../fonts/Montseratt.ttf");
 	font-family: "montseratt";
@@ -15,26 +16,30 @@ body {
 * {
 	font-family: montseratt;
 }
-
+/*rechter deel van de navbar styling*/
 #navbar-right {
 	display: flex;
 	align-items: center;
 }
+/* styling van de lijst in ul*/
 nav ul {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 }
+/* list items stylen */
 #navbar-right li {
 	display: block;
 	text-align: center;
 }
+/*klikbare links stylen*/
 #navbar-right a {
 	padding: 1.5vh 1.5vw;
 	text-decoration: none;
 	color: #222226;
 }
+/*hover property op de items*/
 #navbar-right a:hover {
 	color: #bea189;
 	text-decoration: underline;
@@ -116,28 +121,33 @@ footer {
 		text-align: center;
 	}
 }
-
+/*Dropdown in de navbar ontzichtbaar maken*/
 #dropdown {
 	display: none;
 	left: 0;
 	position: absolute;
 }
+/*plaatje van dropdown*/
 #dropdown img {
 	height: 6vh;
 }
+/*content van de dropdown verbergen*/
 #dropdownContent {
 	display: none;
 	background-color: white;
 	width: 50vw;
 }
+/* stylen van de dropdown content */
 #dropdownContent a {
 	text-decoration: none;
 	font-size: 15px;
 	color: #222226;
 }
+/*hover effect zetten op de dropdown zodat alles zichtbaar wordt*/
 #dropdown:hover #dropdownContent {
 	display: block;
 }
+/*navigatie styling*/
 nav {
 	display: flex;
 	justify-content: space-around;
@@ -145,10 +155,12 @@ nav {
 	background-color: #fff;
 	min-height: 50px;
 }
+/*linker deel navigatie stylen*/
 #navbar-left {
 	display: flex;
 	flex-direction: row;
 }
+/*plaatjes in de navbar stylen*/
 nav img {
 	height: 10vh;
 	align-items: center;
@@ -162,12 +174,15 @@ nav img {
 }
 /* kleiner dan 1050px dropdown aanmaken*/
 @media screen and (max-width: 1050px) {
+	/*navigatie weghalen*/
 	#navbar-right {
 		display: none;
 	}
+	/*dropdown zichtbaar maken*/
 	#dropdown {
 		display: block;
 	}
+	/*logo rechts zetten*/
 	#logo {
 		right: 0;
 		position: absolute;

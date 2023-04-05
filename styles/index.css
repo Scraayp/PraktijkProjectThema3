@@ -4,7 +4,7 @@
 
     Omschrijving: Hoofdpagina
 */
-
+/*grote plaatje met text erin stylen*/
 #mainBanner {
     display: flex;
     height: 60vh;
@@ -16,13 +16,14 @@
     align-items: center;
     min-height: 400px;
 }
-
+/* text binnen het plaatje */
 #textContainer
 {
     margin-left: 10vw;
     width: 30vw;
     color: #6C6D74;
 }
+/*verandering textelementen*/
 p
 {
     font-size: 15px;
@@ -39,6 +40,7 @@ h2, h1
 {
     color: #222226;
 }
+/*styling van de container met articles*/
 #articles
 {
     display: flex;
@@ -46,17 +48,15 @@ h2, h1
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
+/*styling articles*/
 .article
 {
     width: 25vw;
     margin-left: 5vw;
     text-align: center;
 }
-#grijs
-{
-    background-color: #F2F2F2;
-    height: 10vh;
-}
+
+/*styling knop*/
 .button
 {
     background-color: #b7a088;
@@ -65,23 +65,24 @@ h2, h1
     padding: 2vh 2vw;
     border-radius: 30px;
 }
+/*stylen van de knoppencontainer*/
 #buttons
 {
     margin-top: 4vh;
 }
-
+/*hoveren van de knop*/
 .button:hover
 {
     background-color: #b7a088;
 }
-
+/*Responsiveness van de pagina*/
 @media screen and (max-width: 1335px) {
     #textContainer, #textContainer h1, #textContainer h2
     {
         width: 60vw;
         color: white;
     }
-
+    /*zet articles onder elkaar en gecentreerd*/
     #articles
     {
         flex-direction: column;
@@ -90,17 +91,20 @@ h2, h1
 }
 
 @media screen and (max-width: 550px) {
+    /*zet buttons onder elkaar*/
     #buttons
     {
         display: flex;
         flex-direction: column;
     }
+    /*maakt text kleiner*/
     #textContainer h1
     {
         font-size: 20px;
     }
 }
 @media screen and (max-height: 550px) {
+    /*text verkleinen*/
     #textContainer h1
     {
         font-size: 20px;

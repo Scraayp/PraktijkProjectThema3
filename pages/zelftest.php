@@ -251,10 +251,10 @@
             </div>
             <input type="submit" value="Verzenden">
         </form>
-        <!--            Footer includen                                 -->
-        <?php
-        include("../includes/footer.php");
-        ?>
     </main>
+    <!--            Footer includen                                 -->
+    <?php
+    include("../includes/footer.php");
+    ?>
 </body>
 </html>
