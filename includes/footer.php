@@ -8,7 +8,7 @@
     </div>
     <div id="divider"></div>
     <div id="rightFooter">
-        <h3>Algemene informatie</h3>
+        <h3 id="footerH3">Algemene informatie</h3>
         <a>Meer weten -></a>
         <a>Vergoeding -></a>
         <a>Contact -></a>
