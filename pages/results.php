@@ -33,7 +33,7 @@ include("../includes/header.php");
 <main>
 <?php
 // Als er geen cookie is, verwijzen we de browser naar de zelftest
-    if(!isset($_COOKIE["resultaat"])){
+    if(!isset($_COOKIE["resultaat"]) && !isset($_POST)){
 //        Verwijs de browser naar de locatie ./zelftest.php
         header("Location: ./zelftest.php");
 //        Exit de code zodat je niet in een loop wordt.
