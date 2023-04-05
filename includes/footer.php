@@ -1,3 +1,16 @@
+<?php
+/**
+ * User: Michal Kolasa
+ * Date: 17/03/2023 13:50
+ * File: index.php
+ *
+ * Omschrijving: De hoofdpagina van de website
+ */
+
+//  ron wuz here
+// Dit is de footer
+?>
+
 <footer>
     <div id="leftFooter">
         <img src="/Praktijk/Project/PraktijkProjectThema3/images/foto-footer.png" width="75" height="92">

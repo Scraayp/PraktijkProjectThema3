@@ -86,10 +86,10 @@ include("../includes/header.php");
 //  Loop door alle resultaten
     foreach ($resultArray as $key => $value)
     {
-//        Check of de resultaat
+//        Check of de resultaat de hoogste resultaat nummer is
         if($result == $value)
         {
-
+//            Voeg dan de naam toe aan de array
             array_push($highestArray, $key);
         }
     }
@@ -99,34 +99,34 @@ include("../includes/header.php");
 //    Als we gelijkspel hebben
     if(count($highestArray) > 1)
     {
-        echo "Je bent een ";
+//        Zet de cookie value: Vorige cookie value en Je bent een
         $cookie_value = $cookie_value ."Je bent een ";
         foreach ($highestArray as $key => $value)
         {
             if (count($highestArray) - 1 == $key)
             {
-                echo $highestArray[$key];
+                //        Zet de cookie value
                 $cookie_value = $cookie_value . $highestArray[$key];
             }
             else
             {
-                echo $highestArray[$key] . ", ";
+                //        Zet de cookie value
                 $cookie_value = $cookie_value . $highestArray[$key]  . ", ";
             }
         }
-        echo " persoon.";
+        //        Zet de cookie value
         $cookie_value = $cookie_value . " persoon.";
     }
     else
     {
-        echo "Je bent een " . $highestArray[0] . " persoon.";
+//        Zet de cookie value
         $cookie_value = "Je bent een " . $highestArray[0] . " persoon.";
     }
 
-    $cookie_name = "resultaat";
+    echo $cookie_value;
 
-    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is a day
-
+//    Maak een cookie aan met naam resultaat en value hierboven. Tijd dat het een dag is
+    setcookie("resultaat", $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is een dag
 }
 ?>
 
