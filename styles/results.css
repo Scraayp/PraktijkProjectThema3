@@ -1,0 +1,16 @@
+/*
+    Auteur: Jesse Copier
+    Aanmaakdatum: 05/04/2023 12:15
+
+    Omschrijving: Stylesheet resultatenpagina
+*/
+
+#resultsBanner
+{
+    width: 100vw;
+    height: 60vh;
+    background-image: url("../images/zelftest-achtergrond.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

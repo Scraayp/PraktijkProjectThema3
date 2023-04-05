@@ -239,6 +239,16 @@
                 <input id="q15a4" type="radio" name="q15" value="consciëntieus">
                 <label for="q15a4">Ik ben nauwkeurig en zorgvuldig in het omgaan met details, maar zorg er ook voor dat ik het grote plaatje niet uit het oog verlies.</label>
             </div>
+            <div class="questionContainer">
+                <label>
+                    Wat is jouw naam?
+                </label>
+                <input type="text" name="name" required><br>
+                <input id="voorwaarden" type="checkbox" required>
+                <label for="voorwaarden">
+                    Ik ga akkoord met de voorwaarden
+                </label>
+            </div>
             <input type="submit" value="Verzenden">
         </form>
     </main>
