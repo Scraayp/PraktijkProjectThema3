@@ -33,7 +33,7 @@ include("../includes/header.php");
 <main>
 <?php
 // Als er geen cookie is, verwijzen we de browser naar de zelftest
-    if(!isset($_COOKIE["resultaat"]) && !isset($_POST)){
+    if(!isset($_COOKIE["resultaat"]) && !$_POST){
 //        Verwijs de browser naar de locatie ./zelftest.php
         header("Location: ./zelftest.php");
 //        Exit de code zodat je niet in een loop wordt.
@@ -41,7 +41,7 @@ include("../includes/header.php");
     }
 
 //    Als we een cookie hebben maar geen formulier submissie
-    if(isset($_COOKIE["resultaat"]) && !isset($_POST)){
+    if(isset($_COOKIE["resultaat"]) && !$_POST){
 //        Laat de resultaat zien van de cookie
         echo $_COOKIE["resultaat"];
     }else {
