@@ -45,7 +45,7 @@
                 if (isset($_COOKIE["resultaat"]) && !$_POST)
                 {
                     // Laat de resultaat zien van de cookie
-                    echo $_COOKIE["resultaat"];
+                    echo "<h3>" . $_COOKIE["resultaat"] . "</h3>";
                 }
                 // Als we een formulier submissie hebben maar geen cookie
                 else
@@ -135,7 +135,8 @@
                     // Voeg de naam aan het resultaat toe
                     $cookie_value = $_POST["name"] . ", " . $cookie_value;
 
-                    echo $cookie_value;
+                    // echo het resultaat op de pagina
+                    echo "<h3>" . $cookie_value . "</h3>";
 
                     // Maak een cookie aan met naam resultaat en value hierboven. Tijd dat het een dag is
                     setcookie("resultaat", $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is een dag

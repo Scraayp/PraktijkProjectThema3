@@ -38,16 +38,19 @@
                             date_default_timezone_set("Europe/Amsterdam");
                             $date = Date("H");
 
-                            if($date >= 6 && $date < 12)
+                            if ($date >= 6 && $date < 12)
                             {
                                 echo "Goedemorgen, ";
-                            }else if($date >= 12 && $date < 18)
+                            }
+                            else if ($date >= 12 && $date < 18)
                             {
                                 echo "Goedemiddag, ";
-                            }else if($date >= 18 && $date < 24)
+                            }
+                            else if ($date >= 18 && $date < 24)
                             {
                                 echo "Goedeavond, ";
-                            }else if($date >= 24 && $date < 6)
+                            }
+                            else if ($date >= 24 && $date < 6)
                             {
                                 echo "Goedenacht, ";
                             }
