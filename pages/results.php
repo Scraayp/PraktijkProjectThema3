@@ -12,16 +12,16 @@
 
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <title>
-        Psycholoog Nederland - Resultaten
-    </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Koppeling CSS -->
-    <link rel="stylesheet" href="../styles/stylesheet.css">
-    <link rel="stylesheet" href="../styles/results.css">
-</head>
+    <head>
+        <title>
+            Psycholoog Nederland - Resultaten
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Koppeling CSS -->
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+        <link rel="stylesheet" href="../styles/results.css">
+    </head>
     <body>
         <!-- Include de navigatie balk -->
         <?php
@@ -109,7 +109,7 @@
                 if(count($highestArray) > 1)
                 {
                     // Zet de cookie value: Vorige cookie value en Je bent een
-                    $cookie_value = $cookie_value ."Je bent een ";
+                    $cookie_value = $cookie_value ."je bent een ";
                     foreach ($highestArray as $key => $value)
                     {
                         if (count($highestArray) - 1 == $key)
@@ -129,8 +129,11 @@
                 else
                 {
                     // Zet de cookie value
-                    $cookie_value = "Je bent een " . $highestArray[0] . " persoon.";
+                    $cookie_value = "je bent een " . $highestArray[0] . " persoon.";
                 }
+
+                // Voeg de naam aan het resultaat toe
+                $cookie_value = $_POST["name"] . ", " . $cookie_value;
 
                 echo $cookie_value;
 
