@@ -4,12 +4,6 @@
 
     Omschrijving: Stylesheet voor de pagina met de zelftest
 */
-
-body
-{
-    overflow-x: hidden;
-}
-
 #zelftestBanner
 {
     display: flex;
