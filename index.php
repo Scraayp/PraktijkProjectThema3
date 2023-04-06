@@ -24,14 +24,14 @@
         <!-- Koppeling JavaScript -->
     </head>
     <body>
-<!--    Include de navigatie balk-->
+    <!-- Include de navigatie balk -->
     <?php
-    include("includes/header.php");
+        include("includes/header.php");
     ?>
         <main>
-<!--            Banner met het plaatje ering die bovenaan de pagina staat           -->
+            <!-- Banner met het plaatje ering die bovenaan de pagina staat -->
             <div id="mainBanner">
-<!--                          Text binnen de banner                                 -->
+                <!-- Text binnen de banner -->
                 <div id="textContainer">
                     <h1>
                         Psycholoog Nederland
@@ -46,14 +46,14 @@
                         Wij behandelen volwassenen met o.a. angsten, depressie en somatoforme klachten.
                         </strong>
                     </p>
-<!--                    Div voor styling knopjes                                    -->
+                    <!-- Div voor styling knopjes -->
                     <div id="buttons">
                         <a href="" class="button">Neem contact op</a>
                         <a href="pages/zelftest.php" class="button">Doe de zelftest!</a>
                     </div>
                 </div>
             </div>
-            <!--            Banner met de 3 blokjes text                            -->
+            <!-- Banner met de 3 blokjes text -->
             <div id="articles">
                 <div class="article">
                     <h2>
@@ -87,9 +87,9 @@
                 </div>
             </div>
         </main>
-            <!--            Footer includen                                 -->
-            <?php
+        <!-- Footer includen -->
+        <?php
             include("includes/footer.php");
-            ?>
+        ?>
     </body>
 </html>
