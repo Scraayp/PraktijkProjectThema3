@@ -28,7 +28,22 @@
             include("../includes/header.php");
         ?>
         <div id="resultsBanner">
-
+            <article>
+                <h1>
+                    Zelftest
+                </h1>
+                <h2>
+                    Bepaal welke persoonlijkheid bij jou past!
+                </h2>
+                <p class="headerP">
+                    <strong>
+                        De DISC-methode categoriseert persoonlijkheden in vier types: Dominant, Invloedrijk, Stabiel en Consciëntieus.
+                        Bij elke vraag kies je het antwoord dat het beste bij jou past.
+                        Elke vraag heeft vier mogelijke antwoorden.
+                        Aan het einde van de test wordt je score berekend en krijg je te zien welke persoonlijkheid het best bij jou past!
+                    </strong>
+                </p>
+            </article>
         </div>
         <main>
             <?php

@@ -7,10 +7,45 @@
 
 #resultsBanner
 {
-    width: 100vw;
+    display: flex;
     height: 60vh;
+    width: 100vw;
     background-image: url("../images/zelftest-achtergrond.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left;
+    align-items: center;
+}
+#resultsBanner article
+{
+    margin-left: 10vw;
+    width: 30vw;
+    color: #6C6D74;
+}
+.headerP
+{
+    font-size: 15px;
+}
+h2
+{
+    font-size: 20px;
+}
+h1
+{
+    font-size: 36px;
+}
+h2, h1
+{
+    color: #222226;
+}
+main
+{
+    width: 100vw;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: #f0ecf9;
 }
