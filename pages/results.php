@@ -47,6 +47,16 @@
         </div>
         <main>
             <?php
+
+            function advies($ar) {
+                // Blijf wachten totdat de cookie is ingesteld
+                if($_POST){
+
+                }else if($_COOKIE){
+                    echo $_COOKIE['resultaat'];
+                }
+            }
+
                 // Als er geen cookie is, verwijzen we de browser naar de zelftest
                 if (!isset($_COOKIE["resultaat"]) && !$_POST)
                 {
@@ -61,10 +71,46 @@
                 {
                     // Laat de resultaat zien van de cookie
                     echo "<h3>" . $_COOKIE["resultaat"] . "</h3>";
+
+                    if(str_contains($_COOKIE["resultaat"], 'dominant')){
+                        echo "<p>
+                            Je bent een Dominant persoon.
+                            Mensen die hoog scoren op de Dominantie dimensie zijn vaak assertief, doelgericht en competitief.
+                            Ze zijn gericht op resultaten en houden van uitdagingen.
+                            Ze nemen graag de leiding en hebben vaak een sterke persoonlijkheid. 
+                            Dit kan hen echter ook rigide en onbuigzaam maken en minder open voor de ideeën en meningen van anderen.
+                          </p>";
+                    }
+                    if(str_contains($_COOKIE["resultaat"], 'invloedrijk')){
+                        echo "<p>
+                             Je bent een invloedrijk persoon.
+                             Mensen die hoog scoren op de Invloed dimensie zijn vaak sociaal, enthousiast en optimistisch. 
+                             Ze houden van interactie met anderen en hebben vaak uitstekende communicatievaardigheden. 
+                             Ze zijn vaak charismatisch en kunnen anderen motiveren en inspireren. 
+                             Dit kan hen echter ook ongeduldig en soms oppervlakkig maken.
+                          </p>";
+                    }
+                    if(str_contains($_COOKIE["resultaat"], 'stabiel')){
+                        echo "<p>
+                             Je bent een stabiel persoon
+                             Mensen die hoog scoren op de Stabiliteit dimensie zijn vaak geduldig, vriendelijk en teamgericht. 
+                             Ze zijn loyaal en betrouwbaar en houden van harmonie en stabiliteit. 
+                             Ze hebben vaak een goed oog voor detail en zijn in staat om anderen te helpen bij het oplossen van problemen. 
+                             Dit kan hen echter ook soms onzeker maken en minder bereid om risico's te nemen.
+                           </p>";
+                    }
+                    if(str_contains($_COOKIE["resultaat"], 'consciëntieus')) {
+                        echo "<p>
+                             Je bent een consciëntieus persoon.
+                             Mensen die hoog scoren op de Conformiteit dimensie zijn vaak nauwkeurig, georganiseerd en analytisch. 
+                             Ze houden van structuur en orde en hebben vaak een sterk gevoel voor detail. 
+                             Ze zijn in staat om problemen te analyseren en creatieve oplossingen te bedenken. 
+                             Dit kan hen echter ook perfectionistisch en kritisch maken en minder flexibel in onverwachte situaties.
+                          </p>";
+                    }
                 }
                 // Als we een formulier submissie hebben maar geen cookie
-                else
-                {
+                else {
 
                     $dominant = 0;
                     $invloedrijk = 0;
@@ -73,23 +119,15 @@
 
 
                     // Ga door alle antwoorden heen, geef de vraag $key variable aan en antwoord $value aan.
-                    foreach ($_POST as $key => $value)
-                    {
+                    foreach ($_POST as $key => $value) {
                         // Check if de antwoord deze 4 namen bewat, tel dan de score van bij.
-                        if ($value == "dominant")
-                        {
+                        if ($value == "dominant") {
                             $dominant++;
-                        }
-                        else if ($value == "invloedrijk")
-                        {
+                        } else if ($value == "invloedrijk") {
                             $invloedrijk++;
-                        }
-                        else if ($value == "stabiel")
-                        {
+                        } else if ($value == "stabiel") {
                             $stabiel++;
-                        }
-                        else if ($value == "consciëntieus")
-                        {
+                        } else if ($value == "consciëntieus") {
                             $consciëntieus++;
                         }
                     }
@@ -108,11 +146,9 @@
                     // Maak een array met hogste cijfers
                     $highestArray = array();
                     // Loop door alle resultaten
-                    foreach ($resultArray as $key => $value)
-                    {
+                    foreach ($resultArray as $key => $value) {
                         // Check of de resultaat de hoogste resultaat nummer is
-                        if ($result == $value)
-                        {
+                        if ($result == $value) {
                             // Voeg dan de naam toe aan de array
                             array_push($highestArray, $key);
                         }
@@ -121,28 +157,21 @@
                     // Zet de cookie aantwoord een lege string
                     $cookie_value = "";
                     // Als we gelijkspel hebben
-                    if(count($highestArray) > 1)
-                    {
+                    if (count($highestArray) > 1) {
                         // Zet de cookie value: Vorige cookie value en Je bent een
-                        $cookie_value = $cookie_value ."je bent een ";
-                        foreach ($highestArray as $key => $value)
-                        {
-                            if (count($highestArray) - 1 == $key)
-                            {
+                        $cookie_value = $cookie_value . "je bent een ";
+                        foreach ($highestArray as $key => $value) {
+                            if (count($highestArray) - 1 == $key) {
                                 // Zet de cookie value
                                 $cookie_value = $cookie_value . $highestArray[$key];
-                            }
-                            else
-                            {
+                            } else {
                                 // Zet de cookie value
-                                $cookie_value = $cookie_value . $highestArray[$key]  . ", ";
+                                $cookie_value = $cookie_value . $highestArray[$key] . ", ";
                             }
                         }
                         // Zet de cookie value
                         $cookie_value = $cookie_value . " persoon.";
-                    }
-                    else
-                    {
+                    } else {
                         // Zet de cookie value
                         $cookie_value = "je bent een " . $highestArray[0] . " persoon.";
                     }
@@ -153,56 +182,46 @@
                     // echo het resultaat op de pagina
                     echo "<h3>" . $cookie_value . "</h3>";
 
-                    // Maak een cookie aan met naam resultaat en value hierboven. Tijd dat het een dag is
-                    setcookie("resultaat", $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is een dag
-                }
-                while(!isset($_COOKIE['resultaat']))
-                {
-                    sleep(1);
-                }
-                echo "<div id='resultaat'>";
-                if (str_contains($_COOKIE['resultaat'], "dominant"))
-                {
-                   echo "<p>
+                    foreach($highestArray as $key => $value){
+                        if($value == "dominant"){
+                            echo "<p>
                             Je bent een Dominant persoon.
                             Mensen die hoog scoren op de Dominantie dimensie zijn vaak assertief, doelgericht en competitief.
                             Ze zijn gericht op resultaten en houden van uitdagingen.
                             Ze nemen graag de leiding en hebben vaak een sterke persoonlijkheid. 
                             Dit kan hen echter ook rigide en onbuigzaam maken en minder open voor de ideeën en meningen van anderen.
                           </p>";
-                }
-                if (str_contains($_COOKIE['resultaat'], "invloedrijk"))
-                {
-                    echo "<p>
+                        }else if($value == "invloedrijk"){
+                            echo "<p>
                              Je bent een invloedrijk persoon.
                              Mensen die hoog scoren op de Invloed dimensie zijn vaak sociaal, enthousiast en optimistisch. 
                              Ze houden van interactie met anderen en hebben vaak uitstekende communicatievaardigheden. 
                              Ze zijn vaak charismatisch en kunnen anderen motiveren en inspireren. 
                              Dit kan hen echter ook ongeduldig en soms oppervlakkig maken.
                           </p>";
-                }
-                if (str_contains($_COOKIE['resultaat'], "stabiel"))
-                {
-                    echo "<p>
+                        }else if($value == "stabiel"){
+                            echo "<p>
                              Je bent een stabiel persoon
                              Mensen die hoog scoren op de Stabiliteit dimensie zijn vaak geduldig, vriendelijk en teamgericht. 
                              Ze zijn loyaal en betrouwbaar en houden van harmonie en stabiliteit. 
                              Ze hebben vaak een goed oog voor detail en zijn in staat om anderen te helpen bij het oplossen van problemen. 
                              Dit kan hen echter ook soms onzeker maken en minder bereid om risico's te nemen.
                            </p>";
-                }
-                if (str_contains($_COOKIE['resultaat'], "consciëntieus"))
-                {
-                    echo "<p>
+                        }else if($value == "consciëntieus"){
+                            echo "<p>
                              Je bent een consciëntieus persoon.
                              Mensen die hoog scoren op de Conformiteit dimensie zijn vaak nauwkeurig, georganiseerd en analytisch. 
                              Ze houden van structuur en orde en hebben vaak een sterk gevoel voor detail. 
                              Ze zijn in staat om problemen te analyseren en creatieve oplossingen te bedenken. 
                              Dit kan hen echter ook perfectionistisch en kritisch maken en minder flexibel in onverwachte situaties.
                           </p>";
+                        }
+                    }
+
+                    // Maak een cookie aan met naam resultaat en value hierboven. Tijd dat het een dag is
+                    setcookie("resultaat", $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is een dag
                 }
 
-                echo "</div>";
             ?>
         </main>
         <!-- Footer includen -->
