@@ -1,6 +1,6 @@
 <?php
 /**
- * User: Michal Kolasa
+ * User: Dani de Rooij
  * Date: 17/03/2023 13:50
  * File: index.php
  * 

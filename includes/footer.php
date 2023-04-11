@@ -2,9 +2,9 @@
 /**
  * User: Michal Kolasa
  * Date: 17/03/2023 13:50
- * File: index.php
+ * File: footer.php
  *
- * Omschrijving: De hoofdpagina van de website
+ * Omschrijving: De footer van de website
  */
 
 //  ron wuz here

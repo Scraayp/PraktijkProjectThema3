@@ -1,53 +1,62 @@
 /*
-    Auteur: Michal Kolasa
+    Auteur: Michal Kolasa & Dani de Rooij
     Aanmaakdatum: 17/03/2023 13:50
 
     Omschrijving: De algemene stylesheet voor de website
 */
 
-body {
+body
+{
 	margin: 0;
 	overflow-x: hidden;
 }
 /*font toevoegen*/
-@font-face {
+@font-face
+{
 	src: url("../fonts/Montseratt.ttf");
 	font-family: "montseratt";
 }
-* {
+*
+{
 	font-family: montseratt;
 }
 /*rechter deel van de navbar styling*/
-#navbar-right {
+#navbar-right
+{
 	display: flex;
 	align-items: center;
 }
 /* styling van de lijst in ul*/
-nav ul {
+nav ul
+{
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	text-align: center;
 }
 /* list items stylen */
-#navbar-right li {
+#navbar-right li
+{
 	display: block;
 	text-align: center;
 }
 /*klikbare links stylen*/
-#navbar-right a {
+#navbar-right a
+{
 	padding: 1.5vh 1.5vw;
 	text-decoration: none;
 	color: #222226;
 }
 /*hover property op de items*/
-#navbar-right a:hover {
+#navbar-right a:hover
+{
 	color: #bea189;
 	text-decoration: underline;
 }
 
 /* Footer styling */
-footer {
+footer
+{
 	background-color: #004e78;
 	color: #fff;
 	display: flex;
@@ -57,7 +66,8 @@ footer {
 	font-family: montseratt;
 }
 
-#divider {
+#divider
+{
 	height: 230px;
 	border: 1px solid #e5e5e7;
 	border-color: rgba(255, 255, 255, 0.1);
@@ -65,7 +75,8 @@ footer {
 	display: inline-block;
 }
 
-#leftFooter {
+#leftFooter
+{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -74,13 +85,15 @@ footer {
 	text-align: left;
 }
 
-#leftFooter hr {
+#leftFooter hr
+{
 	border: 1px solid #e5e5e7;
 	border-color: rgba(255, 255, 255, 0.1);
 	width: 50%;
 }
 
-#rightFooter {
+#rightFooter
+{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -88,69 +101,84 @@ footer {
 	padding-left: 3%;
 }
 
-.footerH3 {
+.footerH3
+{
 	font-size: 18px;
 	font-family: montseratt;
 	font-weight: inherit;
 	text-align: left;
 }
 
-#rightFooter a {
+#rightFooter a
+{
 	font-size: 14px;
 	font-family: montseratt;
 }
 /*footer*/
-@media screen and (max-width: 960px) {
-	footer {
+@media screen and (max-width: 960px)
+{
+	footer
+	{
 		flex-direction: column;
 		height: 50%;
 	}
-	#leftFooter hr {
+	#leftFooter hr
+	{
 		width: 70%;
 	}
-	#leftFooter {
+	#leftFooter
+	{
 		width: 100%;
 	}
-	#divider {
+	#divider
+	{
 		height: 0%;
 	}
 
-	#leftFooter img {
+	#leftFooter img
+	{
 		margin-top: 3%;
 	}
-	#rightFooter {
+	#rightFooter
+	{
 		width: 100%;
 		text-align: center;
 	}
 }
 /*Dropdown in de navbar ontzichtbaar maken*/
-#dropdown {
+#dropdown
+{
 	display: none;
 	left: 0;
 	position: absolute;
 }
 /*plaatje van dropdown*/
-#dropdown img {
+#dropdown img
+{
 	height: 6vh;
 }
 /*content van de dropdown verbergen*/
-#dropdownContent {
+#dropdownContent
+{
 	display: none;
 	background-color: white;
 	width: 50vw;
 }
 /* stylen van de dropdown content */
-#dropdownContent a {
+#dropdownContent a
+{
 	text-decoration: none;
 	font-size: 15px;
 	color: #222226;
 }
 /*hover effect zetten op de dropdown zodat alles zichtbaar wordt*/
-#dropdown:hover #dropdownContent {
+#dropdown:hover #dropdownContent
+{
 	display: block;
 }
 /*navigatie styling*/
-nav {
+nav
+{
 	display: flex;
 	justify-content: space-around;
 	height: 10vh;
@@ -158,39 +186,48 @@ nav {
 	min-height: 50px;
 }
 /*linker deel navigatie stylen*/
-#navbar-left {
+#navbar-left
+{
 	display: flex;
 	flex-direction: row;
 }
 /*plaatjes in de navbar stylen*/
-nav img {
+nav img
+{
 	height: 10vh;
 	align-items: center;
 }
 /*scherm kleiner dan 1335px kleiner lettertype en padding*/
-@media screen and (max-width: 1335px) {
-	#navbar-right a {
+@media screen and (max-width: 1335px)
+{
+	#navbar-right a
+	{
 		padding: 0.5vh 0.5vw;
 		font-size: 14px;
 	}
 }
 /* kleiner dan 1050px dropdown aanmaken*/
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1050px)
+{
 	/*navigatie weghalen*/
-	#navbar-right {
+	#navbar-right
+	{
 		display: none;
 	}
 	/*dropdown zichtbaar maken*/
-	#dropdown {
+	#dropdown
+	{
 		display: block;
 	}
 	/*logo rechts zetten*/
-	#logo {
+	#logo
+	{
 		right: 0;
 		position: absolute;
 	}
 }
-@media screen and (max-height: 550px) {
+@media screen and (max-height: 550px)
+{
 	nav img
 	{
 		min-height: 50px;

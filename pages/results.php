@@ -2,9 +2,9 @@
 /**
  * User: Michal Kolasa
  * Date: 17/03/2023 13:50
- * File: index.php
+ * File: results.php
  *
- * Omschrijving: De hoofdpagina van de website
+ * Omschrijving: De resultatenpagina van de website
  */
 
 //  ron wuz here
@@ -18,7 +18,6 @@ if (!isset($_COOKIE["resultaat"]) && !$_POST)
     exit();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="nl">
     <head>

@@ -21,9 +21,11 @@
         <link href="../styles/zelftest.css" rel="stylesheet">
     </head>
     <body>
+        <!-- Header includen -->
         <?php
             include("../includes/header.php");
         ?>
+        <!-- Banner met achtergrond en informatie -->
         <div id="zelftestBanner">
             <article>
                 <h1>
@@ -43,7 +45,9 @@
             </article>
         </div>
         <main>
+            <!-- Formulier -->
             <form method="post" action="results.php">
+                <!-- Container met een vraag -->
                 <div class="questionContainer">
                     <h3>
                         Hoe beschrijf je jezelf op feestjes?
