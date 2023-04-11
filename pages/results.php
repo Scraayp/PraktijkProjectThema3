@@ -156,6 +156,49 @@
                     // Maak een cookie aan met naam resultaat en value hierboven. Tijd dat het een dag is
                     setcookie("resultaat", $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is een dag
                 }
+                echo "<div id='resultaat'>";
+                if (str_contains($_COOKIE['resultaat'], "dominant"))
+                {
+                   echo "<p>
+                            Je bent een Dominant persoon.
+                            Mensen die hoog scoren op de Dominantie dimensie zijn vaak assertief, doelgericht en competitief.
+                            Ze zijn gericht op resultaten en houden van uitdagingen.
+                            Ze nemen graag de leiding en hebben vaak een sterke persoonlijkheid. 
+                            Dit kan hen echter ook rigide en onbuigzaam maken en minder open voor de ideeën en meningen van anderen.
+                          </p>";
+                }
+                if (str_contains($_COOKIE['resultaat'], "invloedrijk"))
+                {
+                    echo "<p>
+                             Je bent een invloedrijk persoon.
+                             Mensen die hoog scoren op de Invloed dimensie zijn vaak sociaal, enthousiast en optimistisch. 
+                             Ze houden van interactie met anderen en hebben vaak uitstekende communicatievaardigheden. 
+                             Ze zijn vaak charismatisch en kunnen anderen motiveren en inspireren. 
+                             Dit kan hen echter ook ongeduldig en soms oppervlakkig maken.
+                          </p>";
+                }
+                if (str_contains($_COOKIE['resultaat'], "stabiel"))
+                {
+                    echo "<p>
+                             Je bent een stabiel persoon
+                             Mensen die hoog scoren op de Stabiliteit dimensie zijn vaak geduldig, vriendelijk en teamgericht. 
+                             Ze zijn loyaal en betrouwbaar en houden van harmonie en stabiliteit. 
+                             Ze hebben vaak een goed oog voor detail en zijn in staat om anderen te helpen bij het oplossen van problemen. 
+                             Dit kan hen echter ook soms onzeker maken en minder bereid om risico's te nemen.
+                           </p>";
+                }
+                if (str_contains($_COOKIE['resultaat'], "consciëntieus"))
+                {
+                    echo "<p>
+                             Je bent een consciëntieus persoon.
+                             Mensen die hoog scoren op de Conformiteit dimensie zijn vaak nauwkeurig, georganiseerd en analytisch. 
+                             Ze houden van structuur en orde en hebben vaak een sterk gevoel voor detail. 
+                             Ze zijn in staat om problemen te analyseren en creatieve oplossingen te bedenken. 
+                             Dit kan hen echter ook perfectionistisch en kritisch maken en minder flexibel in onverwachte situaties.
+                          </p>";
+                }
+
+                echo "</div>";
             ?>
         </main>
         <!-- Footer includen -->
