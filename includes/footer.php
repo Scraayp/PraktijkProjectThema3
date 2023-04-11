@@ -21,9 +21,16 @@
     </div>
     <div id="divider"></div>
     <div id="rightFooter">
-        <h3 id="footerH3">Algemene informatie</h3>
+        <h3 class="footerH3">Algemene informatie</h3>
         <a>Meer weten -></a>
         <a>Vergoeding -></a>
         <a>Contact -></a>
+        <h3 class="footerH3">Datum</h3>
+        <?php
+            $date = date("d-n-y");
+            $hour = date("H:i:s");
+            echo "<p>" . $date . "</p>";
+            echo "<p>" . $hour . "</p>";
+        ?>
     </div>
 </footer>
