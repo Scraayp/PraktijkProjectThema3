@@ -88,10 +88,11 @@ footer {
 	padding-left: 3%;
 }
 
-#footerH3 {
+.footerH3 {
 	font-size: 18px;
 	font-family: montseratt;
 	font-weight: inherit;
+	text-align: left;
 }
 
 #rightFooter a {
