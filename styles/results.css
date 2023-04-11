@@ -58,7 +58,18 @@ h3
 {
     text-align: center;
 }
-
+/* Divider met tekst display flex geven en positioneren */
+#resultInfo
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#resultInfo p
+{
+    width: 25vw;
+    text-align: center;
+}
 /* Responsive maken */
 @media screen and (max-width: 1335px)
 {
@@ -69,5 +80,9 @@ h3
     .headerP
     {
         color: black;
+    }
+    #resultInfo p
+    {
+        width: 80vw;
     }
 }
