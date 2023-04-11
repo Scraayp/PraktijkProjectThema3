@@ -156,6 +156,10 @@
                     // Maak een cookie aan met naam resultaat en value hierboven. Tijd dat het een dag is
                     setcookie("resultaat", $cookie_value, time() + (86400 * 30), "/"); // 86400 ms is een dag
                 }
+                while(!isset($_COOKIE['resultaat']))
+                {
+                    sleep(1);
+                }
                 echo "<div id='resultaat'>";
                 if (str_contains($_COOKIE['resultaat'], "dominant"))
                 {
