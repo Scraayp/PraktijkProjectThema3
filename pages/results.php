@@ -48,15 +48,6 @@
         <main>
             <?php
 
-            function advies($ar) {
-                // Blijf wachten totdat de cookie is ingesteld
-                if($_POST){
-
-                }else if($_COOKIE){
-                    echo $_COOKIE['resultaat'];
-                }
-            }
-
                 // Als er geen cookie is, verwijzen we de browser naar de zelftest
                 if (!isset($_COOKIE["resultaat"]) && !$_POST)
                 {
