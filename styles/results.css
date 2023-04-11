@@ -4,7 +4,7 @@
 
     Omschrijving: Stylesheet resultatenpagina
 */
-
+/* Banner op de resultaat pagina krijgt een background-image en positions */
 #resultsBanner
 {
     display: flex;
@@ -17,12 +17,14 @@
     justify-content: left;
     align-items: center;
 }
+/* Article in de resultsbanner krijgt grootte en tekstkleur */
 #resultsBanner article
 {
     margin-left: 10vw;
     width: 30vw;
     color: #6C6D74;
 }
+/* Tekstgrootte aanpassen */
 .headerP
 {
     font-size: 15px;
@@ -35,10 +37,12 @@ h1
 {
     font-size: 36px;
 }
+/* Kleur titels */
 h2, h1
 {
     color: #222226;
 }
+/* Main krijgt achtergrondkleur en grootte en display flex */
 main
 {
     width: 100vw;
@@ -48,4 +52,22 @@ main
     flex-direction: column;
     padding-top: 20px;
     background-color: #f0ecf9;
+}
+/* Titel wordt gecentreerd */
+h3
+{
+    text-align: center;
+}
+
+/* Responsive maken */
+@media screen and (max-width: 1335px)
+{
+    #resultsBanner article
+    {
+        width: 80vw;
+    }
+    .headerP
+    {
+        color: black;
+    }
 }

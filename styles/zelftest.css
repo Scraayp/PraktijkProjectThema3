@@ -4,6 +4,7 @@
 
     Omschrijving: Stylesheet voor de pagina met de zelftest
 */
+/* Banner op de zelftest pagina krijgt een background-image en positions */
 #zelftestBanner
 {
     display: flex;
@@ -16,12 +17,14 @@
     justify-content: left;
     align-items: center;
 }
+/* Article in de zelftestbanner krijgt grootte en tekstkleur */
 #zelftestBanner article
 {
     margin-left: 10vw;
     width: 30vw;
     color: #6C6D74;
 }
+/* Tekstgrootte aanpassen */
 .headerP
 {
     font-size: 15px;
@@ -34,10 +37,12 @@ h1
 {
     font-size: 36px;
 }
+/* Kleur titels */
 h2, h1
 {
     color: #222226;
 }
+/* Main krijgt achtergrondkleur en display flex */
 main
 {
     width: 100vw;
@@ -46,6 +51,7 @@ main
     padding-top: 20px;
     background-color: #f0ecf9;
 }
+/* Divider met vraag en radiobuttons krijgen achtergrondkleur, grootte, positie */
 .questionContainer
 {
     width: 60vw;
@@ -55,6 +61,7 @@ main
     margin-bottom: 25px;
     border-radius: 25px;
 }
+/* Titel van de vraag wordt gecentreerd */
 h3
 {
     text-align: center;
@@ -62,6 +69,7 @@ h3
     margin: 0;
     margin-bottom: 20px;
 }
+/* Submitbutton stylen */
 input[type="submit"]
 {
     width: 120px;
@@ -78,6 +86,7 @@ input[type="submit"]:hover
     background-color: #ead0b0;
 }
 
+/* Responsive maken */
 @media screen and (max-width: 1335px)
 {
     #zelftestBanner article
